@@ -2,7 +2,7 @@
 #################################################
 # Generated Digest of Verse API
 # DO NOT modify this manually!
-# Generated from build: ++Fortnite+Release-33.20-CL-39082670
+# Generated from build: ++Fortnite+Release-33.30-CL-39435251
 #################################################
 
 using {/UnrealEngine.com/Temporary/SceneGraph}
@@ -97,12 +97,6 @@ Temporary<public> := module:
 
             # Attempt to start an interaction. Fails if the agent does not pass the CanInteract function.
             Start<native><public>(Agent:agent)<transacts><decides>:void
-
-            # Returns whether the specified agent can interact.
-            CanInteract<native><native_callable><public>(Agent:agent)<computes><decides><reads>:void
-
-            # Returns an appropriate message to display to players to communicate the current state of the interactable.
-            InteractMessage<native><native_callable><public>(Agent:agent)<computes><decides><reads>:message
 
         using {/Verse.org/Native}
         using {/Verse.org/Simulation/Tags}
